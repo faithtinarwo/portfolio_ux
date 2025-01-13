@@ -41,5 +41,6 @@ def school_web_design_case_study():
 
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    # Bind to 0.0.0.0 and use the environment variable for the port
+    app.run(host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
