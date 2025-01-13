@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm Faith Tinarwo</h1>
+        <p>I am a UX Designer and Software Developer dedicated to crafting seamless digital experiences that prioritize both form and function.</p> 
+        <p>With a deep passion for solving complex problems through intuitive design and clean, efficient code,
+         I bring 2 years of experience in designing user-centered interfaces and building scalable web applications.
+         My goal is to bridge the gap between creative design and technological innovation, ensuring every solution is both functional and visually engaging.</p>
+        <a href="/resume" class="cta-button">View Resume</a>
+        <a href="/contact" class="cta-button">Contact Me</a>
+
+    </div>
+    <img src="/static/images/profile.jpg" alt="Your Profile Picture" class="hero-image">
+</section>
+
+<!-- About Me Section -->
+<section id="about-me">
+    <h2>About Me</h2>
+    <p>
+        I'm a passionate UX designer and full-stack developer with expertise in user research, wireframing, 
+        and prototyping. I specialize in creating seamless digital experiences using Python, Flask, JavaScript, and cutting-edge design frameworks. 
+        Always eager to stay ahead of the curve, I enjoy exploring new design trends and experimenting with innovative web technologies to deliver impactful solutions.
+    </p>
+</section>
+
+<!-- Case Study Introduction -->
+<section id="case-studies">
+    <h2>Featured Case Studies</h2>
+    <div class="case-studies-grid">
+        <div class="case-study-item">
+            <img src="/static/images/project1.png" alt="Project 1">
+            <h3>Making Weather Forecast easy and Accessible</h3>
+            <p>The Weather App project for users to view real-time weather information for their selected city.</p>
+            <a href="/weather" class="cta-link">Read More</a>
+        </div>
+        <div class="case-study-item">
+            <img src="/static/images/project2.jpeg" alt="Project 2">
+            <h3>Telemedicine App</h3>
+            <p> A digital healthcare platform aimed at providing patients with a seamless way to connect with healthcare professionals.</p>
+            <a href="/case_study/telemedicine" class="cta-link">Read More</a>
+        </div>
+        <div class="case-study-item">
+            <img src="/static/images/project3.jpg" alt="Project 2">
+            <h3>Opportunity Portal</h3>
+            <p>A platform designed to connect job seekers with employers in an efficient, user-friendly, and transparent manner.</p>
+            <a href="/case_study/opportunity_portal" class="cta-link">Read More</a>
+        </div>
+        <div class="case-study-item">
+            <img src="/static/images/project4.png" alt="Project 2">
+            <h3>School Web Design</h3>
+            <p>How I designed a website for a school.</p>
+            <a href="/case_study/school_web_design" class="cta-link">Read More</a>
+        </div>
+        
+    </div>
+    <a href="/projects" class="cta-button">Explore All Projects</a>
+</section>
+{% endblock %}
+

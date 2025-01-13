@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Case Study{% endblock %}
+
+{% block content %}
+<section id="case-study">
+    <h1>Case Study: Weather app</h1>
+    <h2>Problem Statement</h2>
+    <p>People need reliable weather data quickly to plan their day, 
+       but most weather platforms are cluttered with ads, overly detailed data, 
+       or unnecessary complexity. Users require an app that offers the essentials in a simple, 
+       accessible, and aesthetically pleasing manner.</p>
+
+        <p>Objectives
+        
+        To create a user-centered weather app that provides key weather data (temperature, conditions, wind speed, etc.).
+        To keep the interface simple and visually engaging, allowing users to quickly access and understand the information.
+        To integrate a dark mode feature for better accessibility and user preference.</p>
+
+    <h2>Solution</h2>
+    <p>Users can view updated weather details (temperature, description, wind speed, etc.) for their chosen city.
+       A customizable dark mode that enhances user comfort.
+       Simple icons visually represent weather conditions (sunny, rainy, cloudy), making data more engaging.</p>
+
+    <h2>Challenges & Solutions</h2>
+    <p>Initially, network issues or incorrect city names led to errors or blank data displays. 
+       I implemented error handling to alert users with a clear message if data isn’t available.
+       I faced challenges ensuring design consistency between light and dark modes. 
+       Testing on various devices helped fine-tune this feature.</p>
+
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="/static/images/project1.png" alt="Screenshot 1">
+    </div>
+</section>
+{% endblock %}

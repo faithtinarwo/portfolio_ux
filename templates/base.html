@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">
+                    <img src="/static/images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects">UI</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+        <p>Follow me: 
+            <a href="https://www.linkedin.com/in/faith-tinarwo-5abaa1327/">LinkedIn</a> | 
+            <a href="https://github.com/faithtinarwo">GitHub</a>
+        </p>
+    </footer>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
